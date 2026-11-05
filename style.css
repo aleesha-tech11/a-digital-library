@@ -30,6 +30,42 @@ nav {
     font-weight: bold;
     color: var(--accent-sage);
 }
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+nav a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-size: 1rem;
+}
+nav a :hover {
+    color: var(--accent-gold);
+}
+/*the painting i wanna add i named it a heroo of my ideas  */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    min-height: 80vh;
+    gap: 2rem;
+}
+.hero-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;   
+}
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0 , 0 , 0.1);
+    border: 4px solid var(--card-bg);
+
+}
+
 
 
 
