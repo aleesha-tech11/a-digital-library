@@ -1,0 +1,35 @@
+body {
+    background-color: var(--bg-parchment);
+    color: var(--text-main);
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+}
+:root {
+    --bg-parchment: #f9f6f0;
+    --text-main: 2d2b2a;
+    --accent-sage: #5f7461;
+    --accent-gold: #d4a359;
+    --card-bg: #ffffff;
+    --border-subtle: #e6e0d4;    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    background-color: var(--bg-parchment);
+    border-bottom: 1px solid var(--border-subtle);
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-sage);
+}
+
+
+
