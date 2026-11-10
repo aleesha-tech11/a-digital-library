@@ -3,13 +3,48 @@
     <head>
         <meta charset="UTF-8">
         <title>A digital library🏷️🌿</title>
-        <link rel="stlesheet" href="2style.css"></link>
+        <link rel="stylesheet" href="2style.css">
     </head>
-    <!--this so the websiote can remeber you na-->
+    <!--this so the website can remeber you na-->
     <div id="logging-in-stuff">
         <div class="the-login-box">
             <h2>Ready to read🍄🌿</h2>
             <p>🤔Hmm soo you wanna read.....<br>Sure 😊 but first just tell us what to call you<br> so your shelf remmebrs you!</p>
           <input type="text" id="codename" placeholder="Psst write it here..." autocomplete="off">
-          <button onclick="registerReader()">Enter your zone push</button>
+          <button onclick="registerReader()">Enter your zone </button>
     </div>
+    <div class="the-dashboard">
+        <div class="the-like-top-bar">
+        <div>
+            <h1 id="greeting-text">Good evening Reader!</h1>
+            <p> We live a thousand lives by just reading..📖🌌</p>
+        </div>
+        <button class="logout-btn" onclick="switchReader()"></button>
+        </div>
+        <div class="the-app-actions">
+            <button class="action-butn active" onclick="switchTab('read')">Read!</button>
+            <button class="action-butn" onclick="switchTab('Shelf')">The shelf</button>
+            <button class="action-butn" onclick="switchTab('Reviews')">The reviews</button>
+        </div>
+    </div>
+<div class="the-working-area-ig">
+    <div id="the-reading-tab" class="reading-tab active">
+        <div class="the-uploading-area" onclick="document.getElementById('pdf-input').click()">
+            <h3>📂Upload the pdf you wanna read!</h3>
+            <p>Click here to selecte a pdf from your device</p>
+          <input type="file" id="pdf-input" accept=".pdf" style="display: none;" onchange="handlePDFUpload(event)">
+                <p id="the-feedback" style="margin-top: 10px;"></p>
+     </div>
+     <div id="the-shelf" class="reading-tab">
+        <div class="shelf" id="book-keeper">
+            <div class="the-base">The books you read live here🏷️!</div>
+        </div>
+     </div>
+     <div id="book-reviews" class="reading-tab">
+        <h3>Your reviews!</h3>
+        <textarea placeholder="Blurt your thoughts write here...."></textarea>
+     </div> 
+    </div>
+</div>
+    </body>
+    </html>
