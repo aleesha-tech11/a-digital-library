@@ -218,3 +218,70 @@ nav a:hover {
     border-radius: 12px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia',serif;
+}
+body {
+    background-color: #7a507a;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'><rect width='1200' height='800' fill='%237a5c7a'/><circle cx='950' cy='200' r='90' fill='%23fce4c8'/><circle cx='200' cy='150' r='6' fill='%23fff3d1'/><circle cx='450' cy='220' r='4' fill='%23fff3d1'/><circle cx='750' cy='140' r='5' fill='%23fff3d1'/><path d='M 0 550 Q 600 350 1200 550 L 1200 800 L 0 800 Z' fill='%234b6043'/></svg>");
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+#logging-in-stuff {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.the-login-box {
+    background-color: #f3e6d0;
+    padding: 30px;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0 ,0 ,0 ,0.3);
+    border: 2px solid #b7e9b9;
+}
+.the-login-box input  {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 2px solid #b7e9b9;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 16px;
+}
+.the-login-box button {
+    background-color: #b7e9b9;
+    color: #2c4c2a;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+.the-login-box button:hover {
+    background-color: #9cdb9f;
+}
+
+
+
+
+
