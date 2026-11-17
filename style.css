@@ -4,61 +4,165 @@
     --accent-sage: #5f7461;
     --accent-gold: #d4a359;
     --card-bg: #ffffff;
-    --border-subtle: #e6e0d4;
+    --border-subtle: #e6e0d4;     
 }
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Playfair Display' , 'Georgia',serif;
+    box-sizing: border-box; 
 }
 body {
     background-color: var(--bg-parchment);
     color: var(--text-main);
-    line-height: 1.5;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    line-height: 1.6;
 }
-nav {
+.site-header {
+    width: 100%;
+    border-bottom: 1px solid var(--border-subtle);
+    background-color: var(--bg-parchment);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 4rem;
-    background-color: var(--bg-parchment);
+    padding: 1.2rem 2rem;
 }
 .logo {
-    font-family: 'Caveat' , cursive;
-    font-size: 1.9rem;
+    font-family: 'Caveat', cursive;
+    font-size: 1.8rem;
     font-weight: bold;
     color: var(--accent-sage);
 }
-nav ul {
+.nav-links {
     display: flex;
     list-style: none;
-    font-size: 0.95rem;
-    font-family: 'Plus Jakarta Sans' , sans-serif;
-    font-weight: 500;
+    gap: 2rem;
+    align-items: center;
 }
-nav a:hover {
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+.nav-links a:hover {
     color: var(--accent-sage);
+}
+.btn-nav-signup {
+    background-color: var(--accent-sage);
+    color: #fff !important;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    transition: all 0.25s ease !important;
+}
+
+.btn-nav-signup:hover {
+    background-color: var(--accent-gold) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(212, 163, 89, 0.3);
+}
+.hero-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4rem;
-    min-height: 80vh;
+    min-height: 75vh;
     gap: 4rem;
 }
 .hero-content {
     flex: 1;
-    max-width: 480px;
+    max-width: 520px;
 }
 .hero-content h1 {
-    font-size: 3.2rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.15;
+    color: var(--text-main);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.5px;
+}
+.hero-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+}
+.hero-content .tagline {
+    font-style: italic;
+    color: var(--accent-sage);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.btn-hero {
+    display: inline-block;
+    background-color: var(--text-main);
+    color: #ffffff;
+    padding: 0.9rem 1.8rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.btn-hero:hover {
+    background-color: var(--accent-sage);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(95, 116, 97, 0.25);
+}
+.hero-image {
+    flex: 1.2;
+    display: flex;
+    justify-content: center;
 }
 
-
-
-
+.image-frame {
+    position: relative;
+    width: 100%;
+    max-width: 540px;
+    height: 360px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    border: 4px solid #fff;
+}
+.floating-preview-card {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.floating-preview-card span {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--accent-sage);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.floating-preview-card strong {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.95rem;
+    color: var(--text-main);
+}
 
 
 
